@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gaegu:wght@300;400;700&display=swap');
+
+:root {
+  --font-main: 'Gaegu', cursive;
+  --font-header: 'Do Hyeon', sans-serif;
+
+  /* Single Pink Theme */
+  --bg-color: #fff0f5;
+  /* Lavender Blush */
+  --text-color: #5d4037;
+  --highlight-color: #ff69b4;
+  /* Hot Pink */
+  --secondary-color: #87ceeb;
+  /* Sky Blue */
+  --box-border: #ffb7c5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  /* Prevent horizontal scroll if possible, but allow vertical */
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  /* Allow growing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* Add padding preventing edge touching */
+  box-sizing: border-box;
+}
